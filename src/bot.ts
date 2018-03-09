@@ -7,10 +7,10 @@ let chance: number = config.chance
 
 bot.on('message', msg => {
   if (!msg.author.bot) {
-    if (msg.author.id === config.ownerId) {
+    if (msg.author.id === config.owner) {
       if (msg.content.includes('!setChance ')) {
         const parsedChance = msg.content.split(' ').pop()
-        chance = Number.parseInt(parsedChance)
+        chance = Number.parseFloat(parsedChance)
 
         msg.reply('Chance set to ' + chance.toString())
       }
