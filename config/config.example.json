@@ -1,3 +1,5 @@
 {
-  "token": "token_here"
+  "token": "token_here",
+  "chance": 0.1,
+  "owner": "owner_id"
 }
