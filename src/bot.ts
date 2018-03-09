@@ -18,6 +18,7 @@ bot.on('message', msg => {
 
     if (Math.random() <= chance) {
       msg.channel.send('u r a ' + msg.content.split(' ').pop().toLowerCase())
+      console.log(`[TRIGGERED] ${msg.guild.name} > ${msg.channel.id} > by ${msg.author.username}`)
     }
   }
 })
