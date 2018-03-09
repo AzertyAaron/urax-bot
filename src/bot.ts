@@ -1,5 +1,5 @@
 import * as DiscordJS from 'discord.js'
-const config = require('../config/conifg')
+const config = require('../config/config.json')
 
 const bot = new DiscordJS.Client
 
